@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ImageGallery | Explore the World</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="background-glow"></div>
+
+    <!-- NAVIGATION BAR -->
+
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+            📸 Image<span class="purple">Gallery</span>
+        </a>
+
+        <nav>
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#gallery" class="nav-link">Gallery</a>
+            <a href="#about" class="nav-link">About</a>
+        </nav>
+
+        <div class="nav-icon">✦</div>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <span class="hero-tag">
+                ✦ YOUR WORLD, YOUR STORIES ✦
+            </span>
+
+            <h1>
+                Explore the
+                <span>Beautiful World.</span>
+            </h1>
+
+            <p>
+                Every picture tells a story.
+                Discover beautiful places, amazing creatures
+                and unforgettable moments.
+            </p>
+
+            <a href="#gallery" class="explore-btn">
+                Explore Gallery <span>→</span>
+            </a>
+
+        </div>
+
+        <div class="hero-decoration">
+            <div class="circle circle-one"></div>
+            <div class="circle circle-two"></div>
+            <div class="circle circle-three"></div>
+        </div>
+
+    </section>
+
+
+    <!-- GALLERY SECTION -->
+
+    <main id="gallery">
+
+        <div class="section-heading">
+
+            <span class="small-heading">
+                DISCOVER SOMETHING BEAUTIFUL
+            </span>
+
+            <h2>Our <span>Gallery</span></h2>
+
+            <p>
+                Explore the beauty captured through different perspectives.
+            </p>
+
+        </div>
+
+
+        <!-- SEARCH BAR -->
+
+        <div class="gallery-tools">
+
+            <div class="search-box">
+
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search your favourite images..."
+                >
+
+                <button id="clearSearch" aria-label="Clear search">
+                    ×
+                </button>
+
+            </div>
+
+            <p id="imageCount">
+                Showing 12 of 12 images
+            </p>
+
+        </div>
+
+
+        <!-- CATEGORY FILTERS -->
+
+        <div class="filters">
+
+            <button class="active" data-category="all">
+                All
+            </button>
+
+            <button data-category="nature">
+                🌿 Nature
+            </button>
+
+            <button data-category="animals">
+                🐾 Animals
+            </button>
+
+            <button data-category="architecture">
+                🏛 Architecture
+            </button>
+
+            <button data-category="favorites" id="favoritesFilter">
+                ❤️ Favourites
+            </button>
+
+        </div>
+
+
+        <!-- IMAGE GALLERY -->
+
+        <div class="gallery-container">
+
+
+            <!-- IMAGE 1 -->
+
+            <div class="gallery-item"
+                data-category="nature"
+                data-title="Beautiful Nature">
+
+                <div class="image-wrapper">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900"
+                        alt="Beautiful Nature"
+                        loading="lazy"
+                    >
+
+                    <div class="image-overlay">
+                        <span>View Image ↗</span>
+                    </div>
+
+                    <button class="favorite-btn"
+                        aria-label="Add Beautiful Nature to favourites"
+                        aria-pressed="false">♡</button>
+
+                    <a class="download-btn"
+                        href="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900"
+                        download
+                        aria-label="Download Beautiful Nature">⬇</a>
+
+                </div>
+
+                <div class="image-info">
+                    <div>
+                        <h3>Beautiful Nature</h3>
+                        <p>Nature Collection</p>
+                    </div>
+                    <span class="image-number">01</span>
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 2 -->
+
+            <div class="gallery-item"
+                data-category="animals"
+                data-title="Wild Animals">
+
+                <div class="image-wrapper">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=900"
+                        alt="Wild Animals"
+                        loading="lazy"
+                    >
+
+                    <div class="image-overlay">
+                        <span>View Image ↗</span>
+                    </div>
+
+                    <button class="favorite-btn"
+                        aria-label="Add Wild Animals to favourites"
+                        aria-pressed="false">♡</button>
+
+                    <a class="download-btn"
+                        href="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=900"
+                        download
+                        aria-label="Download Wild Animals">⬇</a>
+
+                </div>
+
+                <div class="image-info">
+                    <div>
+                        <h3>Wild Animals</h3>
+                        <p>Animal Collection</p>
+                    </div>
+                    <span class="image-number">02</span>
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 3 -->
+
+            <div class="gallery-item"
+                data-category="architecture"
+                data-title="Modern Architecture">
+
+                <div class="image-wrapper">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=900"
+                        alt="Modern Architecture"
+                        loading="lazy"
+                    >
+
+                    <div class="image-overlay">
+                        <span>View Image ↗</span>
+                    </div>
+
+                    <button class="favorite-btn"
+                        aria-label="Add Modern Architecture to favourites"
+                        aria-pressed="false">♡</button>
+
+                    <a class="download-btn"
+                        href="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=900"
+                        download
+                        aria-label="Download Modern Architecture">⬇</a>
+
+                </div>
+
+                <div class="image-info">
+                    <div>
+                        <h3>Modern Architecture</h3>
+                        <p>Architecture Collection</p>
+                    </div>
+                    <span class="image-number">03</span>
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 4 -->
+
+            <div class="gallery-item"
+                data-category="nature"
+                data-title="Mountain View">
+
+                <div class="image-wrapper">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=900"
+                        alt="Mountain View"
+                        loading="lazy"
+                    >
+
+                    <div class="image-overlay">
+                        <span>View Image ↗</span>
+                    </div>
+
+                    <button class="favorite-btn"
+                        aria-label="Add Mountain View to favourites"
+                        aria-pressed="false">♡</button>
+
+                    <a class="download-btn"
+                        href="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=900"
+                        download
+                        aria-label="Download Mountain View">⬇</a>
+
+                </div>
+
+                <div class="image-info">
+                    <div>
+                        <h3>Mountain View</h3>
+                        <p>Nature Collection</p>
+                    </div>
+                    <span class="image-number">04</span>
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 5 -->
+
+            <div class="gallery-item"
+                data-category="animals"
+                data-title="Lovely Animals">
+
+                <div class="image-wrapper">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=900"
+                        alt="Lovely Animals"
+                        loading="lazy"
+                    >
+
+                    <div class="image-overlay">
+                        <span>View Image ↗</span>
+                    </div>
+
+                    <button class="favorite-btn"
+                        aria-label="Add Lovely Animals to favourites"
+                        aria-pressed="false">♡</button>
+
+                    <a class="download-btn"
+                        href="https://images.unsplash.com/photo-1552053831-71594a27632d?w=900"
+                        download
+                        aria-label="Download Lovely Animals">⬇</a>
+
+                </div>
+
+                <div class="image-info">
+                    <div>
+                        <h3>Lovely Animals</h3>
+                        <p>Animal Collection</p>
+                    </div>
+                    <span class="image-number">05</span>
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 6 -->
+
+            <div class="gallery-item"
+                data-category="architecture"
+                data-title="City Architecture">
+
+                <div class="image-wrapper">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900"
+                        alt="City Architecture"
+                        loading="lazy"
+                    >
+
+                    <div class="image-overlay">
+                        <span>View Image ↗</span>
+                    </div>
+
+                    <button class="favorite-btn"
+                        aria-label="Add City Architecture to favourites"
+                        aria-pressed="false">♡</button>
+
+                    <a class="download-btn"
+                        href="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=900"
+                        download
+                        aria-label="Download City Architecture">⬇</a>
+
+                </div>
+
+                <div class="image-info">
+                    <div>
+                        <h3>City Architecture</h3>
+                        <p>Architecture Collection</p>
+                    </div>
+                    <span class="image-number">06</span>
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 7 -->
+
+            <div class="gallery-item"
+                data-category="nature"
+                data-title="Green Forest">
+
+                <div class="image-wrapper">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=900"
+                        alt="Green Forest"
+                        loading="lazy"
+                    >
+
+                    <div class="image-overlay">
+                        <span>View Image ↗</span>
+                    </div>
+
+                    <button class="favorite-btn"
+                        aria-label="Add Green Forest to favourites"
+                        aria-pressed="false">♡</button>
+
+                    <a class="download-btn"
+                        href="https://images.unsplash.com/photo-1448375240586-882707db888b?w=900"
+                        download
+                        aria-label="Download Green Forest">⬇</a>
+
+                </div>
+
+                <div class="image-info">
+                    <div>
+                        <h3>Green Forest</h3>
+                        <p>Nature Collection</p>
+                    </div>
+                    <span class="image-number">07</span>
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 8 -->
+
+            <div class="gallery-item"
+                data-category="nature"
+                data-title="Ocean View">
+
+                <div class="image-wrapper">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900"
+                        alt="Ocean View"
+                        loading="lazy"
+                    >
+
+                    <div class="image-overlay">
+                        <span>View Image ↗</span>
+                    </div>
+
+                    <button class="favorite-btn"
+                        aria-label="Add Ocean View to favourites"
+                        aria-pressed="false">♡</button>
+
+                    <a class="download-btn"
+                        href="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900"
+                        download
+                        aria-label="Download Ocean View">⬇</a>
+
+                </div>
+
+                <div class="image-info">
+                    <div>
+                        <h3>Ocean View</h3>
+                        <p>Nature Collection</p>
+                    </div>
+                    <span class="image-number">08</span>
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 9 -->
+
+            <div class="gallery-item"
+                data-category="animals"
+                data-title="Gentle Elephant">
+
+                <div class="image-wrapper">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=900"
+                        alt="Gentle Elephant"
+                        loading="lazy"
+                    >
+
+                    <div class="image-overlay">
+                        <span>View Image ↗</span>
+                    </div>
+
+                    <button class="favorite-btn"
+                        aria-label="Add Gentle Elephant to favourites"
+                        aria-pressed="false">♡</button>
+
+                    <a class="download-btn"
+                        href="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?w=900"
+                        download
+                        aria-label="Download Gentle Elephant">⬇</a>
+
+                </div>
+
+                <div class="image-info">
+                    <div>
+                        <h3>Gentle Elephant</h3>
+                        <p>Animal Collection</p>
+                    </div>
+                    <span class="image-number">09</span>
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 10 -->
+
+            <div class="gallery-item"
+                data-category="animals"
+                data-title="Beautiful Deer">
+
+                <div class="image-wrapper">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1484406566174-9da000fda645?w=900"
+                        alt="Beautiful Deer"
+                        loading="lazy"
+                    >
+
+                    <div class="image-overlay">
+                        <span>View Image ↗</span>
+                    </div>
+
+                    <button class="favorite-btn"
+                        aria-label="Add Beautiful Deer to favourites"
+                        aria-pressed="false">♡</button>
+
+                    <a class="download-btn"
+                        href="https://images.unsplash.com/photo-1484406566174-9da000fda645?w=900"
+                        download
+                        aria-label="Download Beautiful Deer">⬇</a>
+
+                </div>
+
+                <div class="image-info">
+                    <div>
+                        <h3>Beautiful Deer</h3>
+                        <p>Animal Collection</p>
+                    </div>
+                    <span class="image-number">10</span>
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 11 -->
+
+            <div class="gallery-item"
+                data-category="architecture"
+                data-title="Beautiful Bridge">
+
+                <div class="image-wrapper">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=900"
+                        alt="Beautiful Bridge"
+                        loading="lazy"
+                    >
+
+                    <div class="image-overlay">
+                        <span>View Image ↗</span>
+                    </div>
+
+                    <button class="favorite-btn"
+                        aria-label="Add Beautiful Bridge to favourites"
+                        aria-pressed="false">♡</button>
+
+                    <a class="download-btn"
+                        href="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=900"
+                        download
+                        aria-label="Download Beautiful Bridge">⬇</a>
+
+                </div>
+
+                <div class="image-info">
+                    <div>
+                        <h3>Beautiful Bridge</h3>
+                        <p>Architecture Collection</p>
+                    </div>
+                    <span class="image-number">11</span>
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE 12 -->
+
+            <div class="gallery-item"
+                data-category="architecture"
+                data-title="Luxury Building">
+
+                <div class="image-wrapper">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900"
+                        alt="Luxury Building"
+                        loading="lazy"
+                    >
+
+                    <div class="image-overlay">
+                        <span>View Image ↗</span>
+                    </div>
+
+                    <button class="favorite-btn"
+                        aria-label="Add Luxury Building to favourites"
+                        aria-pressed="false">♡</button>
+
+                    <a class="download-btn"
+                        href="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900"
+                        download
+                        aria-label="Download Luxury Building">⬇</a>
+
+                </div>
+
+                <div class="image-info">
+                    <div>
+                        <h3>Luxury Building</h3>
+                        <p>Architecture Collection</p>
+                    </div>
+                    <span class="image-number">12</span>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- NO RESULTS -->
+
+        <div class="no-results" id="noResults">
+
+            <span>🔍</span>
+
+            <h3>No Images Found</h3>
+
+            <p>
+                Try searching with a different name or category.
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- ADVANCED LIGHTBOX -->
+
+    <div class="lightbox" id="lightbox">
+
+        <button class="close-btn" id="closeBtn"
+            aria-label="Close preview">
+            &times;
+        </button>
+
+        <button class="lightbox-nav prev-btn" id="prevBtn"
+            aria-label="Previous image">
+            &#10094;
+        </button>
+
+        <div class="lightbox-content">
+
+            <img id="lightboxImg" src="" alt="Image Preview">
+
+            <div class="lightbox-caption">
+
+                <h3 id="lightboxTitle"></h3>
+
+                <p id="lightboxCounter"></p>
+
+                <a id="lightboxDownload"
+                    class="lightbox-download"
+                    href="#"
+                    download>
+                    ⬇ Download Image
+                </a>
+
+            </div>
+
+        </div>
+
+        <button class="lightbox-nav next-btn" id="nextBtn"
+            aria-label="Next image">
+            &#10095;
+        </button>
+
+    </div>
+
+
+    <!-- ABOUT SECTION -->
+
+    <section class="about" id="about">
+
+        <span>ABOUT OUR GALLERY</span>
+
+        <h2>
+            Capturing Moments, Creating Memories.
+        </h2>
+
+        <p>
+            A beautiful collection of photographs celebrating
+            nature, wildlife and architecture.
+            Explore, discover and enjoy every moment.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>Image<span>Gallery</span></h3>
+
+        <p>
+            Made with 💜 by Me | CodeAlpha Internship Project
+        </p>
+
+        <p class="copyright">
+            © 2026 ImageGallery. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
